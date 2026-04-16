@@ -43,11 +43,13 @@ function addUser(user) {
     // Create a paragraph for the user's email
     let email = document.createElement("p");
     // TODO: Set the text using the object data
+    email.innerText = user.email;
     div.appendChild(email); // Add the paragraph to the div
     
     // Create a paragrapn for the user's birthdate
     let birthdate = document.createElement("p");
     // TODO: Set the text using the object data
+    birthdate.innerText = user.birthdate;
     div.appendChild(birthdate); // Add the paragraph to the div
 
     document.body.appendChild(div); // Add the div to the page
